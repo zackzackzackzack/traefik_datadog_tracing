@@ -1,0 +1,16 @@
+moduleName: github.com/zackzackzackzack/traefik_datadog_tracing
+type: middleware
+codeName: traefik_datadog_tracing
+goVersion: 1.19
+displayName: Traefik Datadog Tracing Plugin
+summary: A Traefik middleware plugin to enhance tracing spans.
+import: github.com/zackzackzackzack/traefik_datadog_tracing
+testData:
+  myTest: |
+    {
+      "pluginName": "traefik-dd-trace",
+      "datadogTracingAgentUrl": "http://host.docker.internal:8126"
+      "globalTags": {
+        "test": "tag"
+      }
+    }
